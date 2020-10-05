@@ -48,7 +48,7 @@ type AuthenticateResponse struct {
 
 type AuthorizeRequest struct {
 	Request
-	email string
+	Email string
 }
 
 type AuthorizeResponse struct {
