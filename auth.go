@@ -2,6 +2,9 @@ package achieve_models_go
 
 const (
 	AUTH_REGISTER_KEY = "register"
+	AUTH_ISREGISTERED_KEY = "isreg"
+	AUTH_AUTHENTICATE_KEY = "authenticate"
+	AUTH_AUTHORIZE_KEY = "authorize"
 )
 
 type RegisterRequest struct {
