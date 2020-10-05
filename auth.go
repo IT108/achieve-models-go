@@ -17,6 +17,20 @@ type RegisterResponse struct {
 	Error        string
 }
 
+type IsRegisteredRequest struct {
+	Request
+	Email    string
+	Username string
+}
+
+type IsRegisteredResponse struct {
+	Request
+	ResponseCode         int
+	IsEmailRegistered    bool
+	IsUsernameRegistered bool
+	Error                string
+}
+
 type AuthenticateRequest struct {
 	Request
 	Username string
@@ -31,13 +45,13 @@ type AuthenticateResponse struct {
 
 type AuthorizeRequest struct {
 	Request
-	Username string
+	email string
 }
 
 type AuthorizeResponse struct {
 	Request
 	ResponseCode int
-	roles        []string
+	Roles        []string
 	Error        string
 }
 
