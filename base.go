@@ -6,11 +6,13 @@ import (
 )
 
 type Request struct {
-	self   RequestInterface
-	Sender string
-	User   string
-	GateId string
-	Data   string
+	self      RequestInterface
+	RequestId string
+	Method    string
+	Sender    string
+	User      string
+	GateId    string
+	Data      string
 }
 
 type RequestInterface interface {
