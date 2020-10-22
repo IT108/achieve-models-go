@@ -7,12 +7,12 @@ import (
 
 type Request struct {
 	self      RequestInterface
-	RequestId string
-	Method    string
-	Sender    string
-	User      string
-	GateId    string
-	Data      string
+	RequestId string `json:"request_id"`
+	Method    string `json:"method"`
+	Sender    string `json:"sender"`
+	User      string `json:"user"`
+	GateId    string `json:"gate_id"`
+	Data      string `json:"data"`
 }
 
 type RequestInterface interface {
